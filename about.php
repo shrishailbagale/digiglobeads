@@ -34,6 +34,25 @@
         font-size:15px;
         font-family:arial;
     }
+
+    
+ .divide {
+    position: relative;  
+    margin: 35px 0;
+    color: red !important;
+    width: 100%;
+}
+
+.divide:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 11px;
+    left: 30px;
+    height: 0;
+    border-top: 2px solid #eee;
+}
+
   </style>
 </head>
 <body>
@@ -42,8 +61,7 @@
 
    <div id="banner" class="jumbotron jumbotron-fluid bg-dark">
     <div class="container">
-      <h1 class="display-4">We Drive Results About-us</h1>
-      <p class="lead"> Scroll Down to know more ....</p>
+      <h1 class="display-4">About-us</h1>      
     </div>
   </div>
 
@@ -52,36 +70,38 @@
       <div class="row p-5">
         <div class="col-lg-12 component">
           <div class="row">
-            <div class="col-4 ">
+            <div class="col col-md-7 ">
               <h2>About Us</h2>
               <p class="description" >Welcome to AdvertiseHub, the ultimate platform for all your advertising needs! We are a leading online marketplace that connects businesses with their target audience, helping them reach new heights of success through effective marketing strategies. With our cutting-edge technology and extensive network, we provide a seamless and efficient experience for both advertisers and publishers.</p>
             </div>
-            <div class="col-8 ">
+            <div class="col-sm col-md-5">
               <img src="img/about-us.png" alt="Image 1">
             </div>
           </div>
         </div>
+        <div class="divide"><i class="fa fa-arrow-circle-o-right"></i></div>
         <div class="col-lg-12 component">
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm col-md-7">
               <h2>Our Mission</h2>
               <p class="description">At AdvertiseHub, our mission is to revolutionize the advertising industry by providing a one-stop solution for businesses of all sizes to promote their products and services. We aim to empower advertisers by offering them the tools and resources they need to create impactful campaigns and connect with their desired audience in a meaningful way. By driving targeted traffic and maximizing conversions, we strive to be the catalyst that propels businesses to achieve their marketing goals.</p>
             </div>
-            <div class="col-8">
+            <div class="col-sm col-md-5">
               <img src="img/eisenhowervision.png" alt="Image 1">
             </div>
           </div>
         </div>
+        <div class="divide"><i class="fa fa-arrow-circle-o-right"></i></div>
         <div class="col-lg-12 component">
           <div class="row">
-            <div class="col-4">
-              <h2>what we do</h2>
+            <div class="col-sm col-md-7">
+              <h2>What we do</h2>
               <ul>
                 <li class="description">Advertising Solutions: Our platform offers a wide range of advertising solutions tailored to suit your specific needs. Whether you're looking for display ads, native advertising, video ads, or sponsored content, we have the right options to help you engage your target audience effectively.</li>
                 <li class="description">Targeted Reach: With our advanced targeting capabilities, you can precisely reach the audience most likely to be interested in your offerings. Leverage demographic, geographic, and behavioral targeting to optimize your campaigns and maximize the return on your advertising investment.</li>
               </ul>
             </div>
-            <div class="col-8">
+            <div class="col-sm col-md-5">
               <img src="img/what-we-do.png" alt="Image 1">
             </div>
           </div>
@@ -89,7 +109,7 @@
       </div>
     </div>
   </div>
-
+<?php include('includes/script.php') ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
